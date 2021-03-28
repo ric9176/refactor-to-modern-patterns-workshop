@@ -1,5 +1,6 @@
 import react, { Component } from 'react';
 import { withUseTitleEffectHOC } from './useDocumentTitle';
+import { Button } from '@chakra-ui/react';
 
 class DocTitleClassComponent extends Component {
   constructor(props) {
@@ -7,15 +8,14 @@ class DocTitleClassComponent extends Component {
   }
   //Other class stuff that can't be refactored now, ComponentDidMount etc...
   render() {
-    console.log('this.props', this.props);
     // const {count, setCount} = useDocumentTitleEffect({title: "my tit"})
     return (
       <>
         <p>count: {this.props.count}</p>
         <p>title: {this.props.title}</p>
-        <button onClick={() => this.props.setCount(this.props.count + 1)}>
+        <Button onClick={() => this.props.setCount(this.props.count + 1)}>
           Click me
-        </button>
+        </Button>
       </>
     );
   }
