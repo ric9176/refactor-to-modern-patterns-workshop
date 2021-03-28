@@ -1,4 +1,5 @@
 import React, { useState, useEffect } from "react";
+import { Image } from '@chakra-ui/react';
 
 class RandomImage extends React.Component {
   state = {
@@ -21,7 +22,7 @@ class RandomImage extends React.Component {
   render() {
     const { imageUrl } = this.state;
 
-    return <img src={imageUrl} />;
+    return <Image src={imageUrl} />;
   }
 }
 

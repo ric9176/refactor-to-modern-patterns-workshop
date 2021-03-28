@@ -5,7 +5,7 @@ const Exercise = () => (
   <React.Fragment>
     <h3>Exercise</h3>
     <p>
-      Refactor the <code>src/patterns/Hooks/exercise/RandomImage.jsx</code>{" "}
+      Refactor the <code>src/excercise1/RandomImage.jsx</code>{" "}
       using the <code>useState</code> and <code>useEffect</code> Hooks.
     </p>
     <p>
@@ -13,7 +13,6 @@ const Exercise = () => (
       first render.
     </p>
     <RandomImage />
-    <hr />
   </React.Fragment>
 );
 

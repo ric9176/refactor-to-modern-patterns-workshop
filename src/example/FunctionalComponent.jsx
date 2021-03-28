@@ -1,5 +1,5 @@
 import { Box, Button } from '@chakra-ui/react';
-import useDocumentTitleEffect from './useDocumentTitle.js';
+import useDocumentTitleEffect from './useDocumentTitle';
 
 const DocumentTitleEffectFnComponent = () => {
   const { count, setCount } = useDocumentTitleEffect({ title: 'HEY!' });
