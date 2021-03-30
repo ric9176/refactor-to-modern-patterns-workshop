@@ -30,26 +30,14 @@ const useRandomImage = () => {
 };
 
 // render props for use in class component
-const UseRandomImage = ({ children }) => {
-  const { imageUrl, loading, error, toggle } = useRandomImage();
-  return children({ imageUrl, loading, error, toggle });
+const UseRandomImage = () => {
+  // need to do some coding here 😎
 };
 
 // HOC for use in class component
-const withuseRandomImage = Component => {
-  const WrappedComponent = ({ ...props }) => {
-    const { imageUrl, loading, error, toggle } = useRandomImage();
-    return (
-      <Component
-        imageUrl={imageUrl}
-        loading={loading}
-        error={error}
-        toggle={toggle}
-        {...props}
-      />
-    );
-  };
-  return WrappedComponent;
+const withuseRandomImage = () => {
+  // need to do some coding here 😎
+  // Tip: remember that a HOC is a function that takes a component as an arg and returns another component
 };
 
 // Tasks for this file:

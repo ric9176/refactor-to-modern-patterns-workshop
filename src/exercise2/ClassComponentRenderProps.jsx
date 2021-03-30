@@ -8,7 +8,7 @@ import {
   Spinner,
   Button,
 } from '@chakra-ui/react';
-import { UseRandomImage } from './useRandomImage';
+// import { UseRandomImage } from './useRandomImage';
 
 class ClassComponentRenderProps extends Component {
   constructor(props) {
@@ -31,22 +31,8 @@ class ClassComponentRenderProps extends Component {
           Tip: The fetchRandomImage function image should be executed only on
           the first render.
         </Text>
-        {/* Use the return from your hook here for the image src! */}
-        <UseRandomImage>
-          {({ imageUrl, loading, error, toggle }) => {
-            if (loading)
-              return <Spinner thickness='4px' color='blue.500' size='xl' />;
-            if (error) return <Text>oh no!</Text>;
-            return (
-              <>
-                <Image src={imageUrl} />
-                <Button mt={2} onClick={toggle}>
-                  Click me
-                </Button>
-              </>
-            );
-          }}
-        </UseRandomImage>
+        {/* Use the return from your hook here for the image src! Also, add your reload button ;-) */}
+        
         <Image />
       </Box>
     );
