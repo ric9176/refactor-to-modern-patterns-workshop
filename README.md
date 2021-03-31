@@ -16,7 +16,7 @@ You will also see any lint errors in the console.
 
 # Folder structure and exercises
 
-In the `src` folder you'll find an example folder and exercise 1 and 2. Don't forget  reference the example when completing the exercises 😉
+In the `src` folder you'll find an example folder and exercise 1 and 2. Don't forget to reference the example when completing the exercises 😉
 
 ## Exercise 1
 
@@ -42,3 +42,6 @@ Refactor the `ClassComponentRenderProps.jsx` component to implement the useRando
 
 Refactor the `ClassComponentHOC.js` component to implement the useRandomImage hook making use of your HOC component export that work in a class.
 
+## API reference
+
+These exercises use the Rick and Morty api for the images: https://rickandmortyapi.com/documentation/#rest

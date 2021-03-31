@@ -21,18 +21,27 @@ class ClassComponentRenderProps extends Component {
 
     return (
       <Box m={2}>
-        <Heading as='h3'>Part A (RenderProps)</Heading>
-        <Text>
-          Refactor this component to implement the{' '}
-          <Code>useRandomImage hook</Code> making use of your render props
-          component export that work in a class
+        <Heading as='h3' mb={2}>
+          Part 2 (RenderProps)
+        </Heading>
+        <Text mb={2}>
+          Create and export a new component in <Code>useRandomImage.jsx</Code>`
+          that implements the render props pattern.
+        </Text>
+        <Text mb={2}>
+          Refactor this component{' '}
+          <Code colorScheme='yellow'>
+            src/exercise2/ClassComponentRenderProps.jsx
+          </Code>{' '}
+          to implement the <Code>useRandomImage hook</Code> making use of your
+          render props component export that work in a class
         </Text>
         <Text>
-          Tip: The fetchRandomImage function image should be executed only on
-          the first render.
+          Tip: Check out how we did this in the example in{' '}
+          <Code>useDocumentTitle.jsx</Code>
         </Text>
         {/* Use the return from your hook here for the image src! Also, add your reload button ;-) */}
-        
+
         <Image />
       </Box>
     );

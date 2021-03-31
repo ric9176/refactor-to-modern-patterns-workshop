@@ -8,8 +8,10 @@ const Exercise2FunctionalComponent = () => {
     <>
       <Heading as='h3'>Part 1</Heading>
       <Text>
-        1. Refactor this component to implement the{' '}
-        <Code>useRandomImage hook</Code> and display the image using the
+        1. Refactor this component{' '}
+        <Code colorScheme='yellow'>src/exercise2/FunctionalComponent.jsx</Code>{' '}
+        to implement the <Code>useRandomImage hook</Code> and display the image
+        using the
         <Code>Image</Code> component bellow (it taks an src prop 😉)
       </Text>
       <Text>
