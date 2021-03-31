@@ -34,11 +34,11 @@ Tip: The fetchRandomImage function image for now should only be executed on the 
 
 ### pt 2
 
-1.
-a) Create and export a new component in `useRandomImage` that implements the render props pattern.
-b) Refactor the `ClassComponentRenderProps.jsx` component to implement the useRandomImage hook making use of your render props component export that work in a class.
+1. Create and export a new component in `useRandomImage` that implements the render props pattern.
 
-2. 
-a) Create and export a new function in `useRandomImage` that implements the HOC pattern.
-b) Refactor the `ClassComponentHOC.js` component to implement the useRandomImage hook making use of your HOC component export that work in a class.
+Refactor the `ClassComponentRenderProps.jsx` component to implement the useRandomImage hook making use of your render props component export that work in a class.
+
+2. Create and export a new function in `useRandomImage` that implements the HOC pattern.
+
+Refactor the `ClassComponentHOC.js` component to implement the useRandomImage hook making use of your HOC component export that work in a class.
 
