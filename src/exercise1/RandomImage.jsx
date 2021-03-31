@@ -1,9 +1,9 @@
-import React, { useState, useEffect } from "react";
+import React, { useState, useEffect } from 'react';
 import { Image } from '@chakra-ui/react';
 
 class RandomImage extends React.Component {
   state = {
-    imageUrl: undefined
+    imageUrl: undefined,
   };
 
   componentDidMount = () => {
@@ -11,12 +11,11 @@ class RandomImage extends React.Component {
   };
 
   fetchRandomImage = async () => {
-    const response = await fetch(
-      "https://jsonplaceholder.typicode.com/photos?_limit=100"
-    );
+    const response = await fetch('https://rickandmortyapi.com/api/character');
     const data = await response.json();
-    const image = data[Math.floor(Math.random() * data.length)];
-    this.setState({ imageUrl: image.thumbnailUrl });
+    const characters = data.results;
+    const character = characters[Math.floor(Math.random() * characters.length)];
+    this.setState({ imageUrl: character.image });
   };
 
   render() {
@@ -30,12 +29,11 @@ class RandomImage extends React.Component {
 //   const [imageUrl, setImageUrl] = useState();
 
 //   const fetchRandomImage = async () => {
-//     const response = await fetch(
-//       "https://jsonplaceholder.typicode.com/photos?_limit=100"
-//     );
+//     const response = await fetch('https://rickandmortyapi.com/api/character');
 //     const data = await response.json();
-//     const image = data[Math.floor(Math.random() * data.length)];
-//     setImageUrl(image.thumbnailUrl);
+//     const characters = data.results;
+//     const character = characters[Math.floor(Math.random() * characters.length)];
+//     this.setState({ imageUrl: character.image });
 //   };
 
 //   useEffect(() => {
@@ -44,6 +42,5 @@ class RandomImage extends React.Component {
 
 //   return <img src={imageUrl} />;
 // };
-
 
 export default RandomImage;
