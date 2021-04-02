@@ -1,16 +1,18 @@
 import { Box, Button } from '@chakra-ui/react';
 import useDocumentTitleEffect from './useDocumentTitle';
+import { useCounter } from '../CounterContext';
 
 const DocumentTitleEffectFnComponent = () => {
-  const { count, setCount } = useDocumentTitleEffect({ title: 'HEY!' });
+  const { count, setCount } = useCounter();
+
   return (
-    <>
-      <Box m='1' fontWeight='semibold' as='h4' lineHeight='tight' isTruncated>
-        Click counter implemented for the document title
+    <Box bg='green'>
+      <Box m='1' fontWeight='semibold' as='h4'>
+        Count: {count}
       </Box>
 
       <Button onClick={() => setCount(count + 1)}>Click me</Button>
-    </>
+    </Box>
   );
 };
 

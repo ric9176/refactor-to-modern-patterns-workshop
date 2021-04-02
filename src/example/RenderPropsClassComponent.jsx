@@ -1,7 +1,8 @@
 import { Component } from 'react';
-import { Button, Text } from '@chakra-ui/react';
+import { Button, Text, Box } from '@chakra-ui/react';
 
 import { UseTitleEffect } from './useDocumentTitle';
+import { UseCounter } from '../CounterContext';
 
 class DocTitleEffectClassComp extends Component {
   constructor(props) {
@@ -12,16 +13,16 @@ class DocTitleEffectClassComp extends Component {
   render() {
     // can't do this! ==> const {count, setCount} = useDocumentTitleEffect({title: "my title"})
     return (
-      <>
-        <UseTitleEffect title='new'>
+      <Box bg='tomato' fontWeight='semibold'>
+        <UseCounter>
           {({ setCount, count }) => (
             <>
               <Text>Count: {count}</Text>
               <Button onClick={() => setCount(count + 1)}>Click me</Button>
             </>
           )}
-        </UseTitleEffect>
-      </>
+        </UseCounter>
+      </Box>
     );
   }
 }

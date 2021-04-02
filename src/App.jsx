@@ -19,8 +19,8 @@ function App() {
         m={6}
       >
         <Heading>Example</Heading>
-        <Box p={4} bg='tomato'>
-          {/* <FunctionalComponent /> */}
+        <Box p={4}>
+          <FunctionalComponent />
           <RenderPropsClassComponent />
           {/* <HOCclassComponent title='something' /> */}
         </Box>
