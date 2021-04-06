@@ -4,8 +4,9 @@ import {
   HOCclassComponent,
   RenderPropsClassComponent,
 } from './example';
-import Excercise1 from './exercise1';
-import Excercise2 from './exercise2';
+import Exercise1 from './exercise1';
+import Exercise2 from './exercise2';
+import ExerciseContext from './exerciseContext/ThemedApp';
 import { Box, VStack, StackDivider, Heading } from '@chakra-ui/react';
 
 function App() {
@@ -26,12 +27,14 @@ function App() {
         </Box>
         <Heading>Exercise 1</Heading>
         <Box>
-          <Excercise1 />
+          <Exercise1 />
         </Box>
         <Heading>Exercise 2</Heading>
         <Box>
-          <Excercise2 />
+          <Exercise2 />
         </Box>
+        <Heading>Context Exercise</Heading>
+        <ExerciseContext />
       </VStack>
     </>
   );

@@ -43,6 +43,9 @@ class ClassComponentRenderProps extends Component {
         {/* Use the return from your hook here for the image src! Also, add your reload button ;-) */}
 
         <Image />
+
+        <Box height='150px' width='150px' border='1px solid red' />
+        {/* Feel free to remove this box ^^ ;-) */}
       </Box>
     );
   }
