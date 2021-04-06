@@ -6,6 +6,7 @@ import {
 } from './example';
 import Excercise1 from './exercise1';
 import Excercise2 from './exercise2';
+import ThemedApp from './exerciseContext/ThemedApp';
 import { Box, VStack, StackDivider, Heading } from '@chakra-ui/react';
 
 function App() {
@@ -33,6 +34,8 @@ function App() {
           <Excercise2 />
         </Box>
       </VStack>
+
+      <ThemedApp />
     </>
   );
 }
