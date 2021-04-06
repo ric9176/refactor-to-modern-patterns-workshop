@@ -4,6 +4,7 @@ import './index.css';
 import App from './App';
 import { ChakraProvider } from '@chakra-ui/react';
 import { CounterProvider } from './example/CounterContext';
+import ThemeProvider from './exerciseContext/ThemeProvider';
 
 ReactDOM.render(
   <React.StrictMode>
