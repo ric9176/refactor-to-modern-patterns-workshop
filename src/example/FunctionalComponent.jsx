@@ -1,6 +1,6 @@
 import { Box, Button } from '@chakra-ui/react';
 import useDocumentTitleEffect from './useDocumentTitle';
-import { useCounter } from '../CounterContext';
+import { useCounter } from './CounterContext';
 
 const DocumentTitleEffectFnComponent = () => {
   const { count, setCount } = useCounter();

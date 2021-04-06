@@ -2,7 +2,7 @@ import { Component } from 'react';
 import { Button, Text, Box } from '@chakra-ui/react';
 
 import { UseTitleEffect } from './useDocumentTitle';
-import { UseCounter } from '../CounterContext';
+import { UseCounter } from './CounterContext';
 
 class DocTitleEffectClassComp extends Component {
   constructor(props) {
