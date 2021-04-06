@@ -1,5 +1,5 @@
 import React from 'react';
-import themes from '../theme';
+import themes from './theme';
 import { ThemeProvider as StyledProvider } from 'styled-components';
 
 const ThemeContext = React.createContext();
