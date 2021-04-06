@@ -1,14 +1,16 @@
 import React from 'react';
 import Button from './Button';
 import Hero from './Hero';
-import { useTheme } from './ThemeProvider';
+// import { useTheme } from './ThemeProvider';
 
 const ThemedApp = () => {
-  const { toggleTheme } = useTheme();
-
+  /*
+   Here we need to use our hook to access the toggleTheme function and 
+   pass it to the onClick of our Button
+  */
   return (
     <Hero>
-      <Button onClick={toggleTheme}>Theme Switcher</Button>
+      <Button>Theme Switcher</Button>
     </Hero>
   );
 };

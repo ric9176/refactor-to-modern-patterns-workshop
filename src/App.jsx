@@ -34,7 +34,7 @@ function App() {
           <Excercise2 />
         </Box>
       </VStack>
-
+      <Heading>Context Exercise</Heading>
       <ThemedApp />
     </>
   );
