@@ -1,34 +1,16 @@
 import React, { useState, useEffect } from 'react';
 import { Image } from '@chakra-ui/react';
 
-class RandomImage extends React.Component {
-  state = {
-    imageUrl: undefined,
-  };
+// class RandomImage extends React.Component {
+//   state = {
+//     imageUrl: undefined,
+//   };
 
-  componentDidMount = () => {
-    this.fetchRandomImage();
-  };
+//   componentDidMount = () => {
+//     this.fetchRandomImage();
+//   };
 
-  fetchRandomImage = async () => {
-    const response = await fetch('https://rickandmortyapi.com/api/character');
-    const data = await response.json();
-    const characters = data.results;
-    const character = characters[Math.floor(Math.random() * characters.length)];
-    this.setState({ imageUrl: character.image });
-  };
-
-  render() {
-    const { imageUrl } = this.state;
-
-    return <Image src={imageUrl} />;
-  }
-}
-
-// const RandomImage = () => {
-//   const [imageUrl, setImageUrl] = useState();
-
-//   const fetchRandomImage = async () => {
+//   fetchRandomImage = async () => {
 //     const response = await fetch('https://rickandmortyapi.com/api/character');
 //     const data = await response.json();
 //     const characters = data.results;
@@ -36,11 +18,29 @@ class RandomImage extends React.Component {
 //     this.setState({ imageUrl: character.image });
 //   };
 
-//   useEffect(() => {
-//     fetchRandomImage();
-//   }, []);
+//   render() {
+//     const { imageUrl } = this.state;
 
-//   return <img src={imageUrl} />;
-// };
+//     return <Image src={imageUrl} />;
+//   }
+// }
+
+const RandomImage = () => {
+  const [imageUrl, setImageUrl] = useState();
+
+  const fetchRandomImage = async () => {
+    const response = await fetch('https://rickandmortyapi.com/api/character');
+    const data = await response.json();
+    const characters = data.results;
+    const character = characters[Math.floor(Math.random() * characters.length)];
+    setImageUrl(character.image)
+  };
+
+  useEffect(() => {
+    fetchRandomImage();
+  }, []);
+
+  return <Image src={imageUrl} />;
+};
 
 export default RandomImage;
