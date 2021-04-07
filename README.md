@@ -2,13 +2,15 @@
 
 Clone the repo and run `yarn`. If you have any install issues check your version of Node and update to the latest stable version (easiest way is using nvm).
 
+Alternatively you can run `npm i` to run installs
+
 ## Available Scripts
 
-In the project directory, you can run:
+In the project directory, run:
 
-### `yarn start`
+#### `yarn start` or `npm start`
 
-Runs the app in the development mode.\
+This will run the app in the development mode.\
 Open [http://localhost:3000](http://localhost:3000) to view it in the browser.
 
 The page will reload if you make edits.\
