@@ -1,8 +1,10 @@
 # Getting Started 
 
-Clone the repo and run `yarn`. If you have any install issues check your version of Node and update to the latest stable version (easiest way is using [nvm](https://github.com/nvm-sh/nvm#installing-and-updating)), If you already have nvm just run `nvm use` in the project directory.
+Clone the repo and run `yarn` for package installs. 
 
-Alternatively you can run `npm i` to run installs
+Alternatively you can run `npm i` to run installs.
+
+If you have any install issues check your version of Node and update to the latest stable version (easiest way is using [nvm](https://github.com/nvm-sh/nvm#installing-and-updating)), If you already have nvm just run `nvm use` in the project directory.
 
 ## Available Scripts
 
